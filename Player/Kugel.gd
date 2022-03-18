@@ -15,3 +15,11 @@ func _ready():
 func _process(delta):
 	
 	pass
+
+
+func _on_Area2D_area_entered(area):
+	#get_parent().remove_child(self)
+	pass
+
+func loeschdich():
+	get_parent().remove_child(self)

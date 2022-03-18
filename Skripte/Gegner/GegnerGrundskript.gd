@@ -5,37 +5,37 @@ extends Node
 var dead = false 
 var Schaden
 var Leben 
-
-
-var anzSchreie
 var Schreiliste
 
 func GegnerLeben():
 	pass
 	
-func _on_Area2D_area_entered(area):
-	Leben =- 1
+func _on_Area2D_area_entered(body):
+	body.get_parent().loeschdich() #löscht Kugel
+	randomschreien()
+	Leben -= 1
 	if Leben <= 0:
 		dead() #Gegner soll sterben - Code folgt
+
 
 func zombieistwuetend():
 	# soll er schreien, wenn er damage bekommt? -> Dann im ZombieTypenScript
 	pass
 
+func _on_Timerdead_timeout():
+	get_parent().remove_child(self)
+
 func dead():
-	pass
+	$Timerdead.start() 
+	dead = true
 
 func _ready():
 	pass 
 
-func randomschreien():
+func randomschreien(): #schreit züfällige audio
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
-	var Nummer = rng.randi_range(0,Schreiliste.size()-1)
-	print(Schreiliste[Nummer])
-	$AudioStreamPlayer2D.stream = load(Schreiliste[Nummer])
-	$AudioStreamPlayer2D.play()
-
-func _input(event):
-	if event.is_action_pressed("ui_accept"):
-		randomschreien()
+	var Nummer = rng.randi_range(0,Schreiliste.size()-1) #erzeugt  züfällige Nummer 
+	if $AudioStreamPlayer2D.playing == false and dead == false: #überprüft schreien darf
+		$AudioStreamPlayer2D.stream = load(Schreiliste[Nummer]) #setzt Audiospur
+		$AudioStreamPlayer2D.play() #Spiel audiospur

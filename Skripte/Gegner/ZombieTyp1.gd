@@ -8,11 +8,17 @@ func _ready():
 	setschrei()
 	setDaten()
 
-func setschrei():
-	Schreiliste = [
+func setschrei(): 
+	Schreiliste = [ #Liste von audiospuren
 		"res://Sounds/Zombie/ZombieTyp1/zombieSchrei/zombieSchrei.mp3",
 		"res://Sounds/Zombie/ZombieTyp1/zombieSchrei/zombieSchrei2.mp3"]
 
-func setDaten():
+func setDaten(): #setzt Daten wie Leben
 	Leben = 3
 	Schaden = 1
+
+
+
+
+
+
