@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/horror_monster_zombie_male_eating_body_001.mp3-8541d7556427b0bcdd7c1856da93ea61.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Zombie/Eating/horror_monster_zombie_male_eating_body_001.mp3"
+dest_files=[ "res://.import/horror_monster_zombie_male_eating_body_001.mp3-8541d7556427b0bcdd7c1856da93ea61.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
