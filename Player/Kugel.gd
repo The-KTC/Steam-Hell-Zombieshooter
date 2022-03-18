@@ -1,14 +1,17 @@
-extends KinematicBody2D
+extends RigidBody2D
 
-
+var speed = 5
 var velocity = Vector2.ZERO
 func _ready():
 	
-	rotation_degrees = get_parent().rotation_degrees
+	rotation_degrees = get_parent().get_node("Player").rotation_degrees
 	velocity = get_node("Node2D").global_position
-	print(get_node("Node2D").global_position)
-	print(velocity)
+	
+	velocity = velocity * speed
+	
+	apply_impulse(Vector2(),Vector2(500,0).rotated(rotation))
+
 
 func _process(delta):
-	move_and_collide(velocity)
+	
 	pass

@@ -4,7 +4,7 @@
 extends Node
 var dead = false 
 var Schaden
-var Leben = 2
+var Leben 
 
 
 var anzSchreie
