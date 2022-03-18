@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zombieSchrei2.mp3-fdaed111d2553a0455fcdec701fb7151.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Zombie/ZombieTyp1/zombieSchrei/zombieSchrei2.mp3"
+dest_files=[ "res://.import/zombieSchrei2.mp3-fdaed111d2553a0455fcdec701fb7151.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

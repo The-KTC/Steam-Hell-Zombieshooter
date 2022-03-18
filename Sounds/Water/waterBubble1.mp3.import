@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/waterBubble1.mp3-dcb112cf94f9c0865aa5a7a268831a96.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Water/waterBubble1.mp3"
+dest_files=[ "res://.import/waterBubble1.mp3-dcb112cf94f9c0865aa5a7a268831a96.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
