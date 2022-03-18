@@ -1,14 +1,14 @@
-extends Node
-var ZombieSchrei1 = preload("res://Sounds/Zombie/ZombieTyp1/zombieSchrei/zombieSchrei.mp3")
-var ZombieSchrei2 = preload("res://Sounds/Zombie/ZombieTyp1/zombieSchrei/zombieSchrei2.mp3")
+extends "res://Skripte/Gegner/GegnerGrundskript.gd"
+
+
 
 
 
 func _ready():
-	pass 
+	setschrei()
 
-func randomschreien():
-	# Hier bitte den Random-pick-Code einpasten
-	# $AudioStreamPlayer2D.stream = ZombieSchrei1
-	# $AudioStreamPlayer2D.stream = ZombieSchrei2
-	pass
+
+func setschrei():
+	Schreiliste = [
+		"res://Sounds/Zombie/ZombieTyp1/zombieSchrei/zombieSchrei.mp3",
+		"res://Sounds/Zombie/ZombieTyp1/zombieSchrei/zombieSchrei2.mp3"]
