@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wassertropfen.mp3-a51eda50374be488488990067e02f241.mp3str"
+
+[deps]
+
+source_file="res://Sounds/BackgroundToene/wassertropfen.mp3"
+dest_files=[ "res://.import/wassertropfen.mp3-a51eda50374be488488990067e02f241.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
