@@ -9,6 +9,7 @@ func _ready():
 
 
 func _process(delta):
+	Shoot()
 	pass
 
 func _input(event):

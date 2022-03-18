@@ -26,8 +26,9 @@ func _on_Timerdead_timeout():
 	get_parent().remove_child(self)
 
 func dead():
-	$Timerdead.start() 
-	dead = true
+	if dead == false:
+		$Timerdead.start() 
+		dead = true
 
 func _ready():
 	pass 
