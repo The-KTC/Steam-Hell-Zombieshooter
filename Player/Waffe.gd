@@ -17,8 +17,16 @@ func _input(event):
 		Shoot()
 
 onready var Kugel = load("res://Player/Kugel.tscn")
+onready var Schusspartikel = load("res://Animation/Schusspartikel.tscn")
 
 func Shoot():
+	#$Schusspartikel.emitting = true
+	var Schusspartikel1 = Schusspartikel.instance()
+	
+	get_parent().get_parent().add_child(Schusspartikel1)
+	Schusspartikel1.set_position($Position2D.global_position)
+	Schusspartikel1.global_rotation = global_rotation
 	var Kugel1 = Kugel.instance()
 	get_parent().get_parent().add_child(Kugel1)
+
 	Kugel1.set_position($Position2D.global_position)

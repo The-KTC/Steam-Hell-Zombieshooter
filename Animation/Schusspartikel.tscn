@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Animation/Schusspartikel.gd" type="Script" id=1]
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 2
+emission_box_extents = Vector3( 0, 13.8, 0 )
+flag_disable_z = true
+spread = 147.35
+gravity = Vector3( 20, 0, 0 )
+angular_velocity = 211.77
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+radial_accel = 19.61
+radial_accel_random = 1.0
+damping = 0.02
+damping_random = 1.0
+angle = 18.6
+angle_random = 0.49
+scale = 2.56
+scale_random = 1.0
+color = Color( 0, 0, 0, 1 )
+anim_speed = 4.21
+anim_speed_random = 1.0
+anim_offset = 0.58
+anim_offset_random = 0.82
+
+[node name="Schusspartikel" type="Particles2D"]
+use_parent_material = true
+position = Vector2( 33, 0 )
+amount = 176
+lifetime = 1.73
+speed_scale = 6.52
+explosiveness = 0.61
+randomness = 0.53
+process_material = SubResource( 2 )
+script = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
