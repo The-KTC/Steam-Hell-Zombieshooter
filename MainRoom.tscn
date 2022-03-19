@@ -42,5 +42,14 @@ script = ExtResource( 4 )
 [node name="WaterPool" parent="Pools" instance=ExtResource( 3 )]
 position = Vector2( 217, 112 )
 
+[node name="Timer" type="Timer" parent="Pools"]
+wait_time = 5.0
+autostart = true
+
+[node name="WaterPool2" parent="Pools" instance=ExtResource( 3 )]
+position = Vector2( 880, 516 )
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -30.0
+
+[connection signal="timeout" from="Pools/Timer" to="Pools" method="_on_Timer_timeout"]

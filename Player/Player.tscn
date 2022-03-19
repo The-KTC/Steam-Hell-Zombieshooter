@@ -44,7 +44,6 @@ margin_right = 252.0
 margin_bottom = -274.0
 rect_scale = Vector2( 5, 5 )
 custom_fonts/font = ExtResource( 4 )
-text = "Leben 2"
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -28,3 +28,10 @@ func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		#Spawnpoints[0].spawnzombie()
 		pass
+
+
+func _on_Timer_timeout():
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	var Nummer = rng.randi_range(0,Spawnpoints.size()-1) 
+	Spawnpoints[Nummer].spawnzombie()

@@ -5,6 +5,7 @@ var velocity = Vector2.ZERO
 export var speed = 8
 
 func _ready():
+	$UI/Label.set_text(String(Leben))
 	pass 
 
 var Leben = 5
@@ -52,6 +53,9 @@ func _on_Area2D_area_entered(body):
 		Leben -= 1
 	if Leben <= 0 :
 		dead()
+		
+	$UI/Label.set_text(String(Leben))
+
 
 func dead():
 	print("gestorben")

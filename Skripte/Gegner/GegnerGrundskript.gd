@@ -40,8 +40,9 @@ var movement = Vector2.ZERO
 func _process(delta):
 	var Player =  get_parent().get_parent().get_parent().get_node("Player")
 	movement = Player.global_position -global_position
-	movement.normalized() * 20
-	move_and_slide(movement)
+	movement = movement.normalized() * 200
+	if dead == false:
+		move_and_slide(movement)
 
 func randomschreien(): #schreit züfällige audio
 	var rng = RandomNumberGenerator.new()
