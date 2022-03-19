@@ -12,7 +12,7 @@ func _process(delta):
 	pass
 
 func _input(event):
-	if event.is_action_pressed("ui_accept"):
+	if event.is_action_pressed("shoot"):
 		Shoot()
 
 
