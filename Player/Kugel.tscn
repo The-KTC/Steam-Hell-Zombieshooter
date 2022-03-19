@@ -24,9 +24,9 @@ shape = SubResource( 1 )
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 1, 0 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Kugel" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kugel"]
 shape = SubResource( 2 )
 
-[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Kugel" to="." method="_on_Area2D_area_entered"]

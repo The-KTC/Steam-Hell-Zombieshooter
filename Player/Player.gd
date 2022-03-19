@@ -57,6 +57,5 @@ func dead():
 	print("gestorben")
 	Leben = 5
 
-func loeschdich():
-	pass
+
 

@@ -11,11 +11,12 @@ func GegnerLeben():
 	pass
 	
 func _on_Area2D_area_entered(body):
-	body.get_parent().loeschdich() #löscht Kugel
-	randomschreien()
-	Leben -= 1
-	if Leben <= 0:
-		dead() #Gegner soll sterben - Code folgt
+	if body.name == "Kugel" :
+		body.get_parent().loeschdich() #löscht Kugel
+		randomschreien()
+		Leben -= 1
+		if Leben <= 0:
+			dead() #Gegner soll sterben - Code folgt
 
 
 func zombieistwuetend():
