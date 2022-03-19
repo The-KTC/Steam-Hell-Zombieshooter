@@ -10,7 +10,7 @@ extents = Vector2( 6, 6 )
 extents = Vector2( 7, 7 )
 
 [node name="Kugel" type="RigidBody2D"]
-process_priority = -12
+collision_layer = 0
 gravity_scale = 0.0
 script = ExtResource( 2 )
 
