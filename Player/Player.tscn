@@ -28,7 +28,5 @@ shape = SubResource( 2 )
 [node name="Waffe" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 47 )
 
-[node name="Line2D" type="Line2D" parent="."]
-points = PoolVector2Array( 0, 0, 329, 1 )
-width = 1.0
-default_color = Color( 0.835294, 0.266667, 0.266667, 1 )
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true

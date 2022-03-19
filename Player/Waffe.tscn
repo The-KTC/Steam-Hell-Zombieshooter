@@ -23,3 +23,10 @@ position = Vector2( 33, 0 )
 
 [node name="Position2D2" type="Position2D" parent="."]
 position = Vector2( -32, 0 )
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2( 2.09366, -0.333333 )
+scale = Vector2( 3.09366, 0.666667 )
+points = PoolVector2Array( 0, 0, 329, 1 )
+width = 1.0
+default_color = Color( 0.835294, 0.266667, 0.266667, 1 )
