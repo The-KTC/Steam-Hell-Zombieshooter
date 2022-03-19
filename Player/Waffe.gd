@@ -1,8 +1,9 @@
 extends Node2D
-
+var ListeDerSchuesse
 
 
 func _ready():
+	ListeDerSchuesse = ["res://Sounds/Weapon/AK_Shot.mp3"]
 	pass
 
 
@@ -13,6 +14,7 @@ func _process(delta):
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		Shoot()
+
 
 onready var Kugel = load("res://Player/Kugel.tscn")
 onready var Schusspartikel = load("res://Animation/Schusspartikel.tscn")
@@ -28,3 +30,11 @@ func Shoot():
 	get_parent().get_parent().add_child(Kugel1)
 
 	Kugel1.set_position($Position2D.global_position)
+
+func Schusston():
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	var Nummer = rng.randi_range(0,ListeDerSchuesse.size()-1) #erzeugt  züfällige Nummer 
+	if $AudioStreamPlayer2D.playing == false: #überprüft schreien darf
+		$AudioStreamPlayer2D.stream = load(ListeDerSchuesse[Nummer]) #setzt Audiospur
+		$AudioStreamPlayer2D.play() #Spiel audiospur
