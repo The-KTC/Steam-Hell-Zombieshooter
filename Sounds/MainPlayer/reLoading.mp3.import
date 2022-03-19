@@ -11,5 +11,5 @@ dest_files=[ "res://.import/reLoading.mp3-9406015eb6cce848b42249e6e7da0443.mp3st
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

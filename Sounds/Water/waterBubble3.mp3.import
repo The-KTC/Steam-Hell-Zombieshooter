@@ -11,5 +11,5 @@ dest_files=[ "res://.import/waterBubble3.mp3-2c6b1eca449818930eca4f0707860ae5.mp
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
