@@ -36,9 +36,9 @@ current = true
 
 [node name="Label" type="Label" parent="UI"]
 margin_left = 189.0
-margin_top = -287.0
-margin_right = 238.0
-margin_bottom = -271.0
+margin_top = -290.0
+margin_right = 252.0
+margin_bottom = -274.0
 rect_scale = Vector2( 5, 5 )
 custom_fonts/font = ExtResource( 4 )
 text = "Leben 2"

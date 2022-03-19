@@ -7,13 +7,19 @@ export var speed = 8
 func _ready():
 	pass 
 
+
+var UIweg = 30
 func _input(event):
 	if event.is_action_pressed("plus"):
 		$Camera2D.zoom.x -= 0.1
 		$Camera2D.zoom.y -= 0.1
+		$UI/Label.rect_position.x -= UIweg
+		$UI/Label.rect_position.y += UIweg
 	if event.is_action_pressed("minus"):
 		$Camera2D.zoom.x += 0.1
 		$Camera2D.zoom.y += 0.1
+		$UI/Label.rect_position.x += UIweg
+		$UI/Label.rect_position.y -= UIweg
 
 func _process(delta):
 	var input_vector = Vector2.ZERO
