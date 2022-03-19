@@ -34,3 +34,4 @@ func _process(delta):
 	move_and_collide(velocity)
 	
 	look_at(get_global_mouse_position())
+	$UI.rotation = -rotation

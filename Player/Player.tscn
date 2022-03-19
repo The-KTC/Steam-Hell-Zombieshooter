@@ -30,3 +30,13 @@ position = Vector2( 0, 47 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="UI"]
+margin_left = 302.0
+margin_top = -291.0
+margin_right = 342.0
+margin_bottom = -277.0
+rect_scale = Vector2( 5, 5 )
+text = "Leben"
