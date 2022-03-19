@@ -14,6 +14,10 @@ config/name="SteamHellZombieshooter"
 run/main_scene="res://MainRoom.tscn"
 config/icon="res://Sprites/icon.png"
 
+[autoload]
+
+Hintergrundsounds="*res://Skripte/Hintergrundsounds.gd"
+
 [importer_defaults]
 
 texture={

@@ -45,3 +45,6 @@ script = ExtResource( 4 )
 
 [node name="WaterPool" parent="Pools" instance=ExtResource( 3 )]
 position = Vector2( 217, 112 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -30.0
