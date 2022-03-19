@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Erde1.png-33af1b0863e7a17fd54560095a4ed1b9.stex"
+path="res://.import/Nebel.png-7d49761237474f88f93920c8d3de04a1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Boden/Erde1.png"
-dest_files=[ "res://.import/Erde1.png-33af1b0863e7a17fd54560095a4ed1b9.stex" ]
+source_file="res://Sprites/Nebel.png"
+dest_files=[ "res://.import/Nebel.png-7d49761237474f88f93920c8d3de04a1.stex" ]
 
 [params]
 

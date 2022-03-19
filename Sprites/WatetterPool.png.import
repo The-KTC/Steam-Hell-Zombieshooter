@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Erde1.png-33af1b0863e7a17fd54560095a4ed1b9.stex"
+path="res://.import/WatetterPool.png-28ebda68ec9d3a5f77008582e3d01ff2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Boden/Erde1.png"
-dest_files=[ "res://.import/Erde1.png-33af1b0863e7a17fd54560095a4ed1b9.stex" ]
+source_file="res://Sprites/WatetterPool.png"
+dest_files=[ "res://.import/WatetterPool.png-28ebda68ec9d3a5f77008582e3d01ff2.stex" ]
 
 [params]
 
