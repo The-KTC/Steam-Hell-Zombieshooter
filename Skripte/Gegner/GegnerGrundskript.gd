@@ -1,7 +1,7 @@
 # Was ist in dem Skript vorhanden / nötig:
 # Tot der Zombies; Lebensanzahl; Sounds;
 
-extends Node
+extends KinematicBody2D
 var dead = false 
 var Schaden
 var Leben 
@@ -11,11 +11,12 @@ func GegnerLeben():
 	pass
 	
 func _on_Area2D_area_entered(body):
-	body.get_parent().loeschdich() #löscht Kugel
-	randomschreien()
-	Leben -= 1
-	if Leben <= 0:
-		dead() #Gegner soll sterben - Code folgt
+	if body.name == "Kugel" :
+		body.get_parent().loeschdich() #löscht Kugel
+		randomschreien()
+		Leben -= 1
+		if Leben <= 0:
+			dead() #Gegner soll sterben - Code folgt
 
 
 func zombieistwuetend():
@@ -30,11 +31,17 @@ func dead():
 		$Timerdead.start() 
 		dead = true
 
-func loeschdich():
-	pass
 
 func _ready():
-	pass 
+	pass
+
+var movement = Vector2.ZERO
+
+func _process(delta):
+	var Player =  get_parent().get_parent().get_parent().get_node("Player")
+	movement = Player.global_position -global_position
+	movement.normalized() * 20
+	move_and_slide(movement)
 
 func randomschreien(): #schreit züfällige audio
 	var rng = RandomNumberGenerator.new()
