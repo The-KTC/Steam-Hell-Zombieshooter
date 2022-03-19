@@ -26,4 +26,5 @@ func _process(delta):
 
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
-		Spawnpoints[0].spawnzombie()
+		#Spawnpoints[0].spawnzombie()
+		pass

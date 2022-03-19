@@ -23,3 +23,5 @@ func _on_Area2D_area_entered(area):
 
 func loeschdich():
 	get_parent().remove_child(self)
+	
+	global_rotation_degrees
