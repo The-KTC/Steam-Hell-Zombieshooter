@@ -51,4 +51,7 @@ custom_fonts/font = ExtResource( 4 )
 position = Vector2( -0.5, -0.5 )
 shape = SubResource( 3 )
 
+[node name="Timer" type="Timer" parent="."]
+
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

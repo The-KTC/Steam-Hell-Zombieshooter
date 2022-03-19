@@ -25,3 +25,7 @@ func loeschdich():
 	get_parent().remove_child(self)
 	
 	global_rotation_degrees
+
+
+func _on_Timer_timeout():
+	get_parent().remove_child(self)
