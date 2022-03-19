@@ -30,6 +30,9 @@ func dead():
 		$Timerdead.start() 
 		dead = true
 
+func loeschdich():
+	pass
+
 func _ready():
 	pass 
 

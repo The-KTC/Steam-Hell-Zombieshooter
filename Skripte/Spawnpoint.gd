@@ -4,6 +4,7 @@ var AnzZombiesTyp1 = 0   #  Anz steht für Anzahl
 var AnzZombiesTyp2 = 0   
 var AnzZombiesTyp3 = 0   
 
+var Spawnpoints = []
 
 func Zombies():
 	AnzZombiesTyp1
@@ -22,3 +23,7 @@ func _process(delta):
 #		get_pa
 #		
 #		
+
+func _input(event):
+	if event.is_action_pressed("ui_accept"):
+		Spawnpoints[0].spawnzombie()
