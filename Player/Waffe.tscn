@@ -30,3 +30,7 @@ scale = Vector2( 3.09366, 0.666667 )
 points = PoolVector2Array( 0, 0, 329, 1 )
 width = 1.0
 default_color = Color( 0.835294, 0.266667, 0.266667, 1 )
+
+[node name="WeaponShot" type="AudioStreamPlayer2D" parent="."]
+
+[node name="WeaponReload" type="AudioStreamPlayer2D" parent="."]

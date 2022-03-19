@@ -32,7 +32,7 @@ func Shoot():
 	Kugel1.set_position($Position2D.global_position)
 
 func Schusston():
-	var AudioStreamPlayer = get_parent().get_parent().get_parent().get_node("Node2D").get_node("AudioStreamPlayer")
+	var AudioStreamPlayer = get_node("WeaponShot")
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	var Nummer = rng.randi_range(0,ListeDerSchuesse.size()-1) #erzeugt  züfällige Nummer 
