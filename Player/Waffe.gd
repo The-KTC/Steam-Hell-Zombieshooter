@@ -32,9 +32,11 @@ func Shoot():
 	Kugel1.set_position($Position2D.global_position)
 
 func Schusston():
+	var AudioStreamPlayer = get_parent().get_parent().get_parent().get_node("Node2D").get_node("AudioStreamPlayer")
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	var Nummer = rng.randi_range(0,ListeDerSchuesse.size()-1) #erzeugt  züfällige Nummer 
-	if $AudioStreamPlayer2D.playing == false: #überprüft schreien darf
-		$AudioStreamPlayer2D.stream = load(ListeDerSchuesse[Nummer]) #setzt Audiospur
-		$AudioStreamPlayer2D.play() #Spiel audiospur
+	if AudioStreamPlayer.playing == false: #überprüft schreien darf
+		AudioStreamPlayer.stream = load(ListeDerSchuesse[Nummer]) #setzt Audiospur
+		AudioStreamPlayer.play() #Spiel audiospur
+
