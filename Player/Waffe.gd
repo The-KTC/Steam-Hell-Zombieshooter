@@ -18,6 +18,7 @@ func _input(event):
 
 onready var Kugel = load("res://Player/Kugel.tscn")
 onready var Schusspartikel = load("res://Animation/Schusspartikel.tscn")
+onready var Ton = load("res://Sounds/AudioSoundDup.tscn")
 
 func Shoot():
 	#$Schusspartikel.emitting = true
@@ -32,7 +33,7 @@ func Shoot():
 	Kugel1.set_position($Position2D.global_position)
 
 func Schusston():
-	var AudioStreamPlayer = get_node("WeaponShot")
+	var AudioStreamPlayer = Ton.instance()
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	var Nummer = rng.randi_range(0,ListeDerSchuesse.size()-1) #erzeugt  züfällige Nummer 
