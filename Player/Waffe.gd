@@ -28,7 +28,7 @@ func Shoot():
 	
 	var Kugel1 = Kugel.instance()
 	get_parent().get_parent().add_child(Kugel1)
-
+	Schusston()
 	Kugel1.set_position($Position2D.global_position)
 
 func Schusston():
