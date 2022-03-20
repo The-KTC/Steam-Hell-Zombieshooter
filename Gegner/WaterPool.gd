@@ -4,10 +4,12 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-
+export var size = 2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$WatetterPool.scale.x = size
+	$WatetterPool.scale.y = size
 	get_parent().Spawnpoints.append(self)
 
 

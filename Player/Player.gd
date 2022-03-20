@@ -60,7 +60,7 @@ func _on_Area2D_area_entered(body):
 func dead():
 	print("gestorben")
 	Leben = 5
-
+	get_tree().change_scene("res://Main/Node2D.tscn")
 
 
 

@@ -34,9 +34,22 @@ position = Vector2( 880, 516 )
 
 [node name="WaterPool" parent="Pools" instance=ExtResource( 3 )]
 position = Vector2( 217, 112 )
+size = 1
 
 [node name="WaterPool3" parent="Pools" instance=ExtResource( 3 )]
 position = Vector2( 1247, -128 )
+
+[node name="WaterPool8" parent="Pools" instance=ExtResource( 3 )]
+position = Vector2( 1018, 1040 )
+size = 1
+
+[node name="WaterPool9" parent="Pools" instance=ExtResource( 3 )]
+position = Vector2( 2316, 758 )
+size = 1
+
+[node name="WaterPool10" parent="Pools" instance=ExtResource( 3 )]
+position = Vector2( -362, -306 )
+size = 1
 
 [node name="WaterPool4" parent="Pools" instance=ExtResource( 3 )]
 position = Vector2( 1722, 967 )
@@ -46,12 +59,14 @@ position = Vector2( 2016, 289 )
 
 [node name="WaterPool6" parent="Pools" instance=ExtResource( 3 )]
 position = Vector2( 259, 1237 )
+size = 3
 
 [node name="WaterPool7" parent="Pools" instance=ExtResource( 3 )]
 position = Vector2( -393, 670 )
+size = 3
 
 [node name="Timer" type="Timer" parent="Pools"]
-wait_time = 5.0
+wait_time = 2.0
 autostart = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

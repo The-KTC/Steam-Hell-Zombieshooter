@@ -6,6 +6,8 @@ var AnzZombiesTyp3 = 0
 
 var Spawnpoints = []
 
+var Kills = 0
+
 func Zombies():
 	AnzZombiesTyp1
 	AnzZombiesTyp2

@@ -30,7 +30,10 @@ func dead():
 	if dead == false:
 		$Timerdead.start() 
 		dead = true
-
+		get_parent().get_parent().Kills += 1
+		print(get_parent().get_parent().Kills)
+		get_node("zombie").get_node("zombie").disabled = true
+		get_node("shape").disabled = true
 
 func _ready():
 	pass

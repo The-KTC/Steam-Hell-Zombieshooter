@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Font/new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Main/dethscene.gd" type="Script" id=2]
+
+[node name="deathscene" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 289.0
+margin_top = 61.0
+margin_right = 356.0
+margin_bottom = 77.0
+rect_scale = Vector2( 7, 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "Verloren"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 37.0
+margin_top = 309.0
+margin_right = 174.0
+margin_bottom = 331.0
+rect_scale = Vector2( 7, 7 )
+custom_fonts/font = ExtResource( 1 )
+text = "nochmal Spielen"
+
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
