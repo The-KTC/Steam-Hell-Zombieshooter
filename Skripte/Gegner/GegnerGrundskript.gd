@@ -45,6 +45,7 @@ func _process(delta):
 		move_and_slide(movement)
 
 func randomschreien(): #schreit züfällige audio
+	
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	var Nummer = rng.randi_range(0,Schreiliste.size()-1) #erzeugt  züfällige Nummer 

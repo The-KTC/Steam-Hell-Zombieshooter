@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/household_bath_water_going_down_drain.mp3-7691b22a51f1ff578749885aa5956339.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Zombie/household_bath_water_going_down_drain.mp3"
+dest_files=[ "res://.import/household_bath_water_going_down_drain.mp3-7691b22a51f1ff578749885aa5956339.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
